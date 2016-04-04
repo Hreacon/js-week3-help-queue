@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     var runlater = function() {
       Ember.run.later(function() {
         console.log('running');
-        if(self.get('now')) {
+        if(self) {
           self.set('now', new Date().getTime());
           runlater();
         }
