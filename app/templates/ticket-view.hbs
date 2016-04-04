@@ -1,0 +1,7 @@
+<div class="ticket-view">
+  <h4>{{model.students}}</h4>
+  <h5>{{model.location}}</h5>
+  <p>{{model.problem}}</p>
+  {{#link-to 'queue'}}Back{{/link-to}}
+  <button {{action "closeTicket" model}}></button>
+</div>
