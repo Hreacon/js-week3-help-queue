@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
   actions: {
     closeTicket(ticket) {
-      this.destroyRecord(ticket);
+      ticket.destroyRecord();
       this.transitionTo('queue');
     }
   }
