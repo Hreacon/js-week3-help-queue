@@ -1,18 +1,18 @@
 <div>
-  <form>
+  <form class="container">
     <div class="form-group">
-      <label for="students">Student Names</label>
-      {{input value=students id="students" class="form-control"}}
+      <!-- <label for="students">Student Names</label> -->
+      {{input value=students id="students" class="form-control" placeholder="Student Names"}}
     </div>
 
     <div class="form-group">
-      <label for="location">Pair Location</label>
-      {{input value=location id="location" class="form-control"}}
+      <!-- <label for="location">Pair Location</label> -->
+      {{input value=location id="location" class="form-control" placeholder= "Pair Location"}}
     </div>
 
     <div class="form-group">
-      <label for="problem">Describe problem you're having</label>
-      {{textarea rows="8" cols="40" value=problem id="problem" class="form-control"}}
+      <!-- <label for="problem">Describe problem you're having</label> -->
+      {{textarea rows="8" cols="40" value=problem id="problem" class="form-control" placeholder="Describe problem"}}
     </div>
 
     <button class="btn btn-success"{{action 'saveTicket'}}>Add Ticket</button>

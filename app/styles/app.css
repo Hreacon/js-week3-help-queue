@@ -8,3 +8,46 @@
 .ticket:hover {
   box-shadow: 10px 7px 3px lightgray;
 }
+.ticket * {
+  display: inline-block;
+}
+.ticket p {
+  font-size: 2em;
+  margin:0 10px;
+  overflow: hidden;
+  width: 100px;
+}
+.ticket h4 {
+  position: absolute;
+  left:300px;
+  margin-top:10px;
+}
+.ticket span {
+  position: absolute;
+  left: 180px;
+  margin-top: 10px;
+  font-size: 1.4em;
+}
+.header {
+  background-color: orange;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 10px;
+  margin: -15px;
+  margin-bottom: 15px;
+}
+
+label, input, textarea {
+  display: inline-block;
+  margin:10px 0;
+}
+label {
+  width: 29%;
+}
+input, textarea {
+  width: 69%;
+}
+[type=submit] {
+  width: 99%;
+}
