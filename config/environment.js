@@ -4,7 +4,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'helpq',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     baseURL: '/',
+    firebase: 'https://epihelpq.firebaseio.com/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
