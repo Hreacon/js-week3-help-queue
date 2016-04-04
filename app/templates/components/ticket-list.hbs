@@ -1,5 +1,7 @@
 <div class="ticket-list">
-  {{#each model as |ticket|}}
-    {{#link-to 'ticket-view' ticket}}{{ticket-tile ticket=ticket}}{{/link-to}}
+  {{#each ticketList as |ticket|}}
+      {{ticket-tile ticket=ticket}}
+      {{#link-to 'ticket-view' ticket}}
+    {{/link-to}}
   {{/each}}
 </div>

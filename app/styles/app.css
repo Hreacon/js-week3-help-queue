@@ -1,0 +1,10 @@
+.ticket {
+  border:1px solid black;
+  padding:10px;
+  border-radius:10px;
+  margin:20px;
+  box-shadow: 5px 5px 3px lightgray;
+}
+.ticket:hover {
+  box-shadow: 10px 7px 3px lightgray;
+}

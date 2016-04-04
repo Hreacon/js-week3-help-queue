@@ -6,7 +6,8 @@ export default Ember.Route.extend({
   },
   actions: {
     closeTicket(ticket) {
-      ticket.destroyRecord();
+      ticket.set('open', false);
+      ticket.save();
       this.transitionTo('index');
     }
   }
